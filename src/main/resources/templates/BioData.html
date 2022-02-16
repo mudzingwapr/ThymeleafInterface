@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th=https://www.thymeleaf.org/>
+<head>
+<title>Bio Registration </title>
+</head>
+<body>
+<div align="center">
+<h3>Bio REGISTRATION</h3>
+<form action ="save" method="POST">
+<pre>
+<pr>NAME:		<input type="text" name="fname"/>         SURNAME :   <input type="text" name="surname"/></pr>
+                      <br/>
+<pr>TITTLE:		<input type="text" name="tittle"/>         NID NUMBER:   <input type="text" name="nid"/> </pr>
+
+            <br/>
+<pr>GENDER:		Male<input type="radio" name="sex"   value="Male"/>
+                Female<input type="radio" name="sex"  value="Male"/>            EC NUMBER:   <input type="text" name="ecnumber"/>  </pr><br/>      
+<align center>DATEOFBIRTH:	<input type="date" name="dateofbirth"/> </align>
+                <br/>
+<pr>PHONE         :<input type="text" name="phone" />         CELLPHONE: <input type="text" name="cellphone"/></pr>
+				 <br/>
+<pr>EMAIL         :<input type="email" name="email"/>          SIGNATURE: <input type="text" name="signature"/> </pr>
+ 
+<pr>PRESENT POST      : <input type="text" name="ppost"/>     PRESENT MINISTRY : <input type="text" name="pministry"/> </pr>
+ 
+<pr>POST EXAMINED FOR  :<input type="text" name="postexaminedfor"/>  MINISTRY EXAMINED FOR: <input type="text" name="ministryexaminedfor"/> </pr>
+     
+<input type="submit" value="REGISTER"/>
+</pre>
+</form>
+<div th:text="${msga}">
+
+</div>
+</div>
+</body>
+</html>
